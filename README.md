@@ -1,3 +1,3 @@
 # InTOUCH
 
-##TAMUhack 2023 project
+## TAMUhack 2023 project
