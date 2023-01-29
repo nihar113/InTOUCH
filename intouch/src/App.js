@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import AddMedication from "./pages/AddMedication.jsx";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
+import AddDoctor from './pages/AddDoctor.jsx';
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="AddMedication" element={<AddMedication/>}/>
+          <Route path="AddDoctor" element={<AddDoctor/>}/>
         </Route>
       </Routes>
     </BrowserRouter>

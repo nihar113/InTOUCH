@@ -26,9 +26,13 @@ function Form(){
     function changeEnd(event){
         setEnd(event.target.value);
     }
+    function handleClick(event){
+        console.log("hi");
+        event.preventDefault();
+    }
     return(
         <div>
-            <form>
+            <form onSubmit={handleClick}>
                 <label>Name:</label>
                     <input type="text" onChange={changeName}/>
                 <label>Dosage:</label>

@@ -11,6 +11,9 @@ function Navbar() {
         <li>
           <Link to="/AddMedication">Add Medication</Link>
         </li>
+        <li>
+          <Link to="/AddDoctor">Add Doctor</Link>
+        </li>
       </ul>
     </nav>
   );
