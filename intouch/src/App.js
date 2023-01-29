@@ -6,36 +6,27 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import AddDoctor from './pages/AddDoctor.jsx';
 
+var emails = ["tonyyang@tamu.edu", "tonyyang@aggienetwork.com"];
+
+var mail = "mailto:"+emails.join()+'?subject=Medication Update';
 
 
 function App() {
   return (
-    
-    // <div className="App">
-    //   <header className="App-header">
-    //     <img src={logo} className="App-logo" alt="logo" />
-    //     <p>
-    //       Edit <code>src/App.js</code> and save to reload.
-    //     </p>
-    //     <a
-    //       className="App-link"
-    //       href="https://reactjs.org"
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       Learn React
-    //     </a>
-    //   </header>
-    // </div>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="AddMedication" element={<AddMedication/>}/>
-          <Route path="AddDoctor" element={<AddDoctor/>}/>
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <div>
+      <div>
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Layout />}>
+              <Route index element={<Home />} />
+              <Route path="AddMedication" element={<AddMedication/>}/>
+              <Route path="AddDoctor" element={<AddDoctor/>}/>
+            </Route>
+          </Routes>
+        </BrowserRouter>
+      </div>
+      <a href={mail}>Send Email</a>
+    </div>
   );
 }
 

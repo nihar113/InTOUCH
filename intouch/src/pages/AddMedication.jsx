@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 
 function Form(){
     const [name, setName] = useState("");
-    const [dosage, setDosage] = useState(0);
+    const [amount, setAmount] = useState(0);
     const [freq, setFreq] = useState("");
     const [start, setStart] = useState("");
     const [end, setEnd] = useState("");
@@ -11,8 +11,8 @@ function Form(){
         setName(event.target.value);
     }
 
-    function changeDosage(event){
-        setDosage(event.target.value);
+    function changeAmount(event){
+        setAmount(event.target.value);
     }
 
     function changeFreq(event){
@@ -35,8 +35,8 @@ function Form(){
             <form onSubmit={handleClick}>
                 <label>Name:</label>
                     <input type="text" onChange={changeName}/>
-                <label>Dosage:</label>
-                    <input type="number" onChange={changeDosage}/>
+                <label>Amount:</label>
+                    <input type="number" onChange={changeAmount}/>
                 <label>Frequency:</label>
                     <input type="text" onChange={changeFreq}/>
                 <label>Start Date:</label>
