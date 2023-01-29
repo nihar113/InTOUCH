@@ -17,6 +17,9 @@ function Navbar() {
         <li>
           <Link to="/DisplayMedication">Display Medication</Link>
         </li>
+        <li>
+          <Link to="/DisplayDoctor">Display Doctor</Link>
+        </li>
       </ul>
     </nav>
   );

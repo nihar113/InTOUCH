@@ -6,6 +6,7 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import AddDoctor from './pages/AddDoctor.jsx';
 import DisplayMedication from './pages/DisplayMedication.jsx';
+import DisplayDoctor from './pages/DisplayDoctor.jsx';
 
 var emails = ["tonyyang@tamu.edu", "tonyyang@aggienetwork.com"];
 var name = ['Ada','cdc'];
@@ -29,6 +30,7 @@ function App() {
               <Route path="AddMedication" element={<AddMedication/>}/>
               <Route path="AddDoctor" element={<AddDoctor/>}/>
               <Route path="DisplayMedication" element={<DisplayMedication/>}/>
+              <Route path="DisplayDoctor" element={<DisplayDoctor/>}/>
             </Route>
           </Routes>
         </BrowserRouter>
