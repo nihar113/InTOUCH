@@ -6,6 +6,7 @@ function Form(){
     const [freq, setFreq] = useState("");
     const [start, setStart] = useState("");
     const [end, setEnd] = useState("");
+    const [referrer, setReferrer] = useState("");
 
     function changeName(event){
         setName(event.target.value);
@@ -26,6 +27,9 @@ function Form(){
     function changeEnd(event){
         setEnd(event.target.value);
     }
+    function changeReferrer(event){
+        setReferrer(event.target.value);
+    }
     function handleClick(event){
         console.log("hi");
         event.preventDefault();
@@ -43,6 +47,8 @@ function Form(){
                     <input type="text" onChange={changeStart}/>
                 <label>End Date:</label>
                     <input type="text" onChange={changeEnd}/>
+                <label>Referrer:</label>
+                    <input type="text" onChange={changeReferrer}/>
                 <button type='submit'>Submit</button>
             </form>
         </div>
