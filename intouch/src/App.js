@@ -7,8 +7,14 @@ import Home from "./pages/Home";
 import AddDoctor from './pages/AddDoctor.jsx';
 
 var emails = ["tonyyang@tamu.edu", "tonyyang@aggienetwork.com"];
+var name = ['Ada','cdc'];
+var amount = [20,30];
+var freq = ['3/day', '4/day'];
+var mail = "mailto:"+emails.join()+'?subject=Medication Update&body=';
 
-var mail = "mailto:"+emails.join()+'?subject=Medication Update';
+for(var i = 0; i < emails.length; i++){
+  mail += 'Name:%20' + name[i]+'%0A' + 'Amount:%20'+amount[i]+'%0A' +'Frequency:%20'+freq[i]+'%0A%0A';
+}
 
 
 function App() {
