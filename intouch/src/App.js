@@ -5,6 +5,7 @@ import AddMedication from "./pages/AddMedication.jsx";
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import AddDoctor from './pages/AddDoctor.jsx';
+import DisplayMedication from './pages/DisplayMedication.jsx';
 
 var emails = ["tonyyang@tamu.edu", "tonyyang@aggienetwork.com"];
 var name = ['Ada','cdc'];
@@ -27,6 +28,7 @@ function App() {
               <Route index element={<Home />} />
               <Route path="AddMedication" element={<AddMedication/>}/>
               <Route path="AddDoctor" element={<AddDoctor/>}/>
+              <Route path="DisplayMedication" element={<DisplayMedication/>}/>
             </Route>
           </Routes>
         </BrowserRouter>

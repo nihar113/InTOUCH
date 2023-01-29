@@ -14,6 +14,9 @@ function Navbar() {
         <li>
           <Link to="/AddDoctor">Add Doctor</Link>
         </li>
+        <li>
+          <Link to="/DisplayMedication">Display Medication</Link>
+        </li>
       </ul>
     </nav>
   );
